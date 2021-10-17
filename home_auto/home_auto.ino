@@ -18,7 +18,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-   if(blue.available());{
+   if(blue.available()==1){
     char data=blue.read();
     Serial.println("recieved data from app"+(String) data);
     // I used a app called bluettoth switches where ,it has so many switches we can implement through that, so i used only three of them
